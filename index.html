@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Badovinac - Our New Web Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <header>
+        <nav class="custom-nav">
+            <div class="nav-container">
+              <div class="logo">
+                <a href="https://givzey.com">
+                  <img src="givzeylogo.png" alt="Givzey Logo" class="logo-img" />
+                </a>
+              </div>
+              <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Jordan Badovinac</a></li>
+                <li><a href="https://givzey.com/" target="_blank">Givzey Website</a></li>
+              </ul>
+            </div>
+          </nav>          
+      </header>      
+
+    <!-- Parallax Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="text-area">
+                <h4>Fundraising’s First Intelligent Gift Documentation Solution</h4>
+                <h1>Gift Documentation<br />Made Easy</h1>
+                <p>
+                A simple-to-use platform that streamlines and scales multi-year giving  
+                and one-time gifts at every level to accelerate your fundraising team  
+                and improve the donor experience.
+                </p>
+                <div class="cta-buttons" data-aos="zoom-in" data-aos-delay="300">
+                <a href="#about" class="btn solid">Meet Our Future Dev</a>
+                <a href="https://givzey.com" class="btn outline" target="_blank">Compare Our Site</a>
+                </div>
+            </div>
+            <div class="image-area">
+                <img src="decor.png" alt="Illustration" />
+            </div>           
+        </div>
+        <div class="logo-marquee">
+            <div class="logo-track">
+              <img src="logos/a-logo.png" />
+              <img src="logos/b-logo.png" />
+              <img src="logos/bch-logo.png" />
+              <img src="logos/m-logo.jpeg" />
+              <img src="logos/n-logo.png" />
+              <img src="logos/sbu-logo.png" />
+              <img src="logos/s-logo.png" />
+              <img src="logos/t-logo.png" />
+              <img src="logos/w-logo.png" />
+              <img src="logos/x-logo.png" />
+
+              <!-- Duplicate Set -->
+              <img src="logos/a-logo.png" />
+              <img src="logos/b-logo.png" />
+              <img src="logos/bch-logo.png" />
+              <img src="logos/m-logo.jpeg" />
+              <img src="logos/n-logo.png" />
+              <img src="logos/sbu-logo.png" />
+              <img src="logos/s-logo.png" />
+              <img src="logos/t-logo.png" />
+              <img src="logos/w-logo.png" />
+              <img src="logos/x-logo.png" />
+            </div>
+          </div>
+          
+    </section>
+    
+    <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="badovinacjordanimage.jpg" alt="Jordan Badovinac" />
+          </div>
+          <div class="about-text">
+            <h2>Hi, I'm Jordan</h2>
+            <p>
+              I'm a passionate and self-driven web developer with a strong focus on design clarity and user experience.
+              Over the past few years, I've taken full ownership of multiple large-scale web projects—from crafting
+              intuitive front-end interfaces to deploying complete digital ecosystems that align with real business goals.
+            </p>
+            <p>
+              I don't just build websites—I build systems that drive revenue, tell a story, and evolve with the user.
+              I'd love to bring my creativity, technical skills, and genuine enthusiasm for the craft to your team.
+            </p>
+            <p>
+                Let's build something great together.
+            </p>
+      
+            <div class="contact-buttons">
+              <a href="mailto:badovinacjordan@gmail.com" class="btn contact">
+                <i class="fas fa-envelope"></i> Email Me
+              </a>
+              <a href="tel:7209908540" class="btn contact">
+                <i class="fas fa-phone"></i> Call Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+            
+
+    <!-- External AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize AOS
+        AOS.init({
+        duration: 800,
+        once: true,
+        });
+
+        // Dropdown logic
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        if (dropdownToggle) {
+        dropdownToggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            const menu = this.nextElementSibling;
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        });
+        }
+    });
+    </script>  
+</body>
+</html>
